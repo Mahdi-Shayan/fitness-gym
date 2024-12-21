@@ -1,0 +1,46 @@
+@import './config.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "medium";
+  src: url("../assets/fonts/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/Ubuntu-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "regular";
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  font-family: "medium";
+  color: $gray-500;
+  #root,
+  .app,
+  .main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .app {
+    background-color: $gray-20;
+  }
+}
