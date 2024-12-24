@@ -1,26 +1,27 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // Type
-import { Pages } from "./types";
+import { Pages } from "../shared/types";
 
 // Context
 import { useSelected } from "../context/SelectPage";
 
 interface Props {
   children: React.ReactNode;
+  component?: 'btn' | 'a' | undefined
 }
 
 interface Context {
   setSelectedPage: React.Dispatch<React.SetStateAction<Pages>>;
 }
 
-function ActionButton({ children }: Props) {
+function ActionButton({ children, component }: Props) {
   const { setSelectedPage } = useSelected() as Context;
 
   return (
     <AnchorLink
-      href={`${Pages.ContactUs}`}
-      className="btn"
+      href={`#${Pages.ContactUs}`}
+      className={component ?? 'btn'}
       onClick={() => setSelectedPage(Pages.ContactUs)}
     >
       {children}

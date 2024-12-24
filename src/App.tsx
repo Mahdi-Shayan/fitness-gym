@@ -1,5 +1,5 @@
-
 // Components
+import Home from "./pages/home/Home";
 import Nav from "./components/navbar/Nav";
 
 // context
@@ -10,6 +10,9 @@ function App() {
     <SelectPageProvider>
       <div className="app">
         <Nav />
+        <main>
+          <Home />
+        </main>
       </div>
     </SelectPageProvider>
   );

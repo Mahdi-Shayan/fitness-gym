@@ -4,3 +4,8 @@ export enum Pages {
   OurClasses = 'ourclasses',
   ContactUs = 'contactus'
 }
+
+export interface Context {
+  selectedPage: string;
+  setSelectedPage: React.Dispatch<React.SetStateAction<Pages>>;
+}

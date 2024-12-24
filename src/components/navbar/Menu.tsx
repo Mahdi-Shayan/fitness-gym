@@ -1,15 +1,10 @@
 import Link from "./Link";
 
 // Type
-import { Pages } from "../../shared/types";
+import { Context, Pages } from "../../shared/types";
 
 // Context
 import { useSelected } from "../../context/SelectPage";
-
-interface Context {
-  selectedPage: string;
-  setSelectedPage: React.Dispatch<React.SetStateAction<Pages>>;
-}
 
 function Menu() {
   const { selectedPage, setSelectedPage } = useSelected() as Context;

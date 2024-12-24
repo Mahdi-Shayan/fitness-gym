@@ -10,7 +10,7 @@ import "./nav.scss";
 import Menu from "./Menu";
 
 // Types
-import ActionButton from "../../shared/ActionButton";
+import ActionButton from "../../components/ActionButton";
 
 function Nav() {
   const [open, setOpen] = useState<boolean>(false);
