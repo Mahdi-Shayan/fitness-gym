@@ -7,4 +7,51 @@ $primary-300: #FFA6A3;
 $primary-500: #FF6B66;
 $secondary-400: #FFCD58;
 $secondary-500: #FFC132;
-$bg-gradient: liner-gradient(90deg, #FF616A 0%, #FFC837 100%)
+$bg-gradient: liner-gradient(90deg, #FF616A 0%, #FFC837 100%);
+
+@mixin nav-menu($dir, $gap: 30px) {
+  ul {
+    display: flex;
+    gap: $gap;
+    flex-direction: $dir;
+    li {
+      &:hover .link{
+        color: $primary-300;
+      }
+      .link {
+        transition: .3s;
+        &.active {
+          color: $primary-500;
+        }
+      }
+    }
+  }
+}
+
+@mixin btn {
+  .btn {
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: $secondary-500;
+    color: $gray-500;
+    font-family: 'medium';
+    transition: .1s;
+    cursor: pointer;
+    &:hover {
+      background-color: $primary-500;
+      color: white;
+    }
+  }
+}
+
+@include btn;
+
+.a {
+  text-decoration: underline;
+  color: $primary-500;
+  transform: 0.1s;
+  &:hover {
+    color: $secondary-500;
+  }
+}

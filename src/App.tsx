@@ -1,11 +1,17 @@
 
+// Components
+import Nav from "./components/navbar/Nav";
+
+// context
+import { SelectPageProvider } from "./context/SelectPage";
 
 function App() {
-
   return (
-    <div className="app">
-      <h2>salam</h2>
-    </div>
+    <SelectPageProvider>
+      <div className="app">
+        <Nav />
+      </div>
+    </SelectPageProvider>
   );
 }
 
