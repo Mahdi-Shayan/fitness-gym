@@ -1,5 +1,6 @@
 // Components
 import Home from "./pages/home/Home";
+import Benefits from "./pages/benefits/Benefits";
 import Nav from "./components/navbar/Nav";
 
 // context
@@ -12,6 +13,7 @@ function App() {
         <Nav />
         <main>
           <Home />
+          <Benefits />
         </main>
       </div>
     </SelectPageProvider>
