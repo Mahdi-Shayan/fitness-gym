@@ -7,6 +7,7 @@ import Nav from "./components/navbar/Nav";
 import { SelectPageProvider } from "./context/SelectPage";
 import OurClasses from "./pages/ourClasses/OurClasses";
 import ContactUs from "./pages/contactUs/ContactUs";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <OurClasses />
           <ContactUs />
         </main>
+        <Footer />
       </div>
     </SelectPageProvider>
   );

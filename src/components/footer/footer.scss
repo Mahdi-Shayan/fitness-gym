@@ -1,0 +1,38 @@
+@import '../../styles/config.scss';
+
+footer {
+  background-color: $primary-100;
+  display: flex;
+  padding: 50px 80px;
+  .des {
+    line-height: 22px;
+    margin-bottom: 30px;
+    padding-right: 50px;
+  }
+  .header {
+    font-family: 'medium';
+    margin-bottom: 20px;
+  }
+  .left-side {
+    flex: 1.5;
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+  .links {
+    flex: 1;
+    .link {
+      margin-bottom: 20px;
+    }
+  }
+  .contact-us {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
