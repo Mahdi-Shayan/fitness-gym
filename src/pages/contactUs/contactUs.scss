@@ -1,0 +1,85 @@
+@import "../../styles/config.scss";
+
+#contactus {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 80px;
+  background-color: white;
+  .left-side {
+    flex: 1;
+    .title {
+      font-size: clamp(17px, 2.8vw, 25px);
+      margin-bottom: 20px;
+      span {
+        color: $primary-500;
+      }
+    }
+    .des {
+      line-height: 25px;
+      margin-bottom: 40px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input,
+      textarea {
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: $primary-300;
+        font-family: "medium";
+        font-size: 17px;
+        width: 100%;
+        margin-bottom: 5px;
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+        &:focus {
+          border: 2px solid blue;
+        }
+      }
+      textarea {
+        resize: none;
+      }
+      .err-txt {
+        color: red;
+        font-size: 15px;
+      }
+      .submit {
+        width: 180px;
+        border-radius: 8px;
+        border: none;
+        background-color: $secondary-500;
+        color: $gray-500;
+        padding: 12px;
+        font-size: 15px;
+        font-family: "medium";
+        cursor: pointer;
+        transition: 0.1s;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .right-side {
+    flex: 0.7;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  #contactus {
+    padding: 50px 10%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .right-side {
+    display: none;
+  }
+}

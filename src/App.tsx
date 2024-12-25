@@ -6,6 +6,7 @@ import Nav from "./components/navbar/Nav";
 // context
 import { SelectPageProvider } from "./context/SelectPage";
 import OurClasses from "./pages/ourClasses/OurClasses";
+import ContactUs from "./pages/contactUs/ContactUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Home />
           <Benefits />
           <OurClasses />
+          <ContactUs />
         </main>
       </div>
     </SelectPageProvider>
