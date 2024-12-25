@@ -5,6 +5,7 @@ import Nav from "./components/navbar/Nav";
 
 // context
 import { SelectPageProvider } from "./context/SelectPage";
+import OurClasses from "./pages/ourClasses/OurClasses";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <main>
           <Home />
           <Benefits />
+          <OurClasses />
         </main>
       </div>
     </SelectPageProvider>
