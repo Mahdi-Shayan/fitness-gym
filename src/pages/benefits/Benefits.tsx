@@ -48,10 +48,7 @@ function Benefits() {
 
   return (
     <>
-      <motion.section
-        id="benefits"
-        onViewportEnter={() => setSelectedPage(Pages.Benefits)}
-      >
+      <section id="benefits">
         <div className="benefits-title">
           <div className="title">
             <h2>MORE THAN JUST GYM.</h2>
@@ -72,6 +69,7 @@ function Benefits() {
               transition: { staggerChildren: 0.2 },
             },
           }}
+          onViewportEnter={() => setSelectedPage(Pages.Benefits)}
         >
           {benefits.map((benefit: BenefitsType, ind: number) => {
             return (
@@ -113,9 +111,11 @@ function Benefits() {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <h2>
+              <motion.h2
+                onViewportEnter={() => setSelectedPage(Pages.Benefits)}
+              >
                 MILLIONS OF HAPPY MEMBERS GETTING <span>FIT.</span>
-              </h2>
+              </motion.h2>
             </motion.div>
             <motion.div
               className="des"
@@ -148,7 +148,7 @@ function Benefits() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 }

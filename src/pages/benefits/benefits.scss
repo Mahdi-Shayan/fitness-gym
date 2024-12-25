@@ -3,7 +3,6 @@
 #benefits {
   background-color: white;
   padding: 60px 80px;
-  margin: 0 0 50px 0;
   .title {
     font-size: clamp(17px, 2.8vw, 25px);
     margin-bottom: 20px;
@@ -94,6 +93,7 @@
     padding: 60px 10%;
     .benefits-container {
       flex-direction: column;
+      margin-bottom: 50px;
     }
     .main-des {
       flex-direction: column;

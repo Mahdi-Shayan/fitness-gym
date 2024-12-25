@@ -61,12 +61,7 @@ function OurClasses() {
 
   return (
     <>
-      <motion.section
-        id="ourclasses"
-        onViewportEnter={() => {
-          setSelectedPage(Pages.OurClasses);
-        }}
-      >
+      <section id="ourclasses">
         <motion.div
           className="header"
           initial="hidden"
@@ -76,6 +71,9 @@ function OurClasses() {
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
+          }}
+          onViewportEnter={() => {
+            setSelectedPage(Pages.OurClasses);
           }}
         >
           <div className="title">
@@ -107,7 +105,7 @@ function OurClasses() {
             );
           })}
         </div>
-      </motion.section>
+      </section>
     </>
   );
 }

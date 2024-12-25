@@ -25,10 +25,7 @@ function Home() {
 
   return (
     <>
-      <motion.section
-        id="home"
-        onViewportEnter={() => setSelectedPage(Pages.Home)}
-      >
+      <section id="home">
         {/* LEFT SIDE MOBILE AND DESKTOP */}
         <motion.div
           className="left-side"
@@ -40,6 +37,7 @@ function Home() {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
+          onViewportEnter={() => setSelectedPage(Pages.Home)}
         >
           <div className="bg-text">
             <img src={bg_txt} />
@@ -78,7 +76,7 @@ function Home() {
           <img src={ferbes} alt="Ferbes-sponsors" />
           <img src={fortune} alt="Fortune-sponsors" />
         </div>
-      </motion.section>
+      </section>
     </>
   );
 }

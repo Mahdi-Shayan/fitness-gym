@@ -15,6 +15,7 @@ function Link({ page, selectedPage, setSelectedPage }: Props) {
       <AnchorLink
         href={`#${lowerCasePage}`}
         className={lowerCasePage === selectedPage ? "link active" : "link"}
+        offset={95}
         onClick={() => setSelectedPage(lowerCasePage)}
       >
         {page}

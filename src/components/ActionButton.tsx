@@ -22,6 +22,7 @@ function ActionButton({ children, component }: Props) {
     <AnchorLink
       href={`#${Pages.ContactUs}`}
       className={component ?? 'btn'}
+      offset={95}
       onClick={() => setSelectedPage(Pages.ContactUs)}
     >
       {children}
