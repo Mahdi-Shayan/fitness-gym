@@ -12,6 +12,7 @@ main {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
+    min-height: 100vh;
     .left-side {
       grid-area: left;
       .bg-text {

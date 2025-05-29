@@ -13,7 +13,6 @@ import { useSelected } from "../../context/SelectPage";
 // Type
 import { Context, Pages } from "../../shared/types";
 import { schema } from "../../shared/schema";
-import { useState } from "react";
 
 interface FromTypes {
   name: string;
@@ -28,7 +27,6 @@ const headerMotion = {
 
 function ContactUs() {
   const { setSelectedPage } = useSelected() as Context;
-  const [open, setOpen] = useState<boolean>(false);
 
   const {
     values,
@@ -140,7 +138,7 @@ function ContactUs() {
           </motion.form>
         </div>
         <div className="right-side">
-          <img src={contactUsIMG} />
+          <img src={contactUsIMG} alt="Contact Us Graphic"/>
         </div>
       </motion.section>
     </>

@@ -40,11 +40,11 @@ function Home() {
           onViewportEnter={() => setSelectedPage(Pages.Home)}
         >
           <div className="bg-text">
-            <img src={bg_txt} />
+            <img src={bg_txt} alt="Background Text"/>
           </div>
           <div className="side">
             <div className="name">
-              <img src={txt} />
+              <img src={txt} alt="Background Text"/>
             </div>
             <div className="des">
               Unrivaled Gym, Unparalleled Training Fitness Classes. World
@@ -68,7 +68,7 @@ function Home() {
           </div>
         </motion.div>
         <div className="right-side">
-          <img src={homeIMG} />
+          <img src={homeIMG} alt="Home Page Graphic"/>
         </div>
         {/* SPONSORS - DESKTOP  */}
         <div className="sponsors">

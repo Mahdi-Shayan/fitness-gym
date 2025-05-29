@@ -1,7 +1,7 @@
 import Link from "./Link";
 
 // Type
-import { Context, Pages } from "../../shared/types";
+import { Context } from "../../shared/types";
 
 // Context
 import { useSelected } from "../../context/SelectPage";
